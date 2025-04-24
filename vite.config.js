@@ -7,6 +7,8 @@ export default defineConfig({
   server: {
     host: '0.0.0.0', // allows external access
     port: 5173, // or any port you prefer
-    allowedHosts: ['fruitwala-1geu.onrender.com'], // your deployed domain
+    allowedHosts: ['fruitwala-1geu.onrender.com',
+      'fruitwala-1-h8g1.onrender.com'
+    ], // your deployed domain
   },
 })
