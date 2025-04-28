@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "../../components/Button.tsx";
 import { Card, CardContent } from "../../components/card.jsx";
+import logo from "../../assets/logo.png";
 
 const fruits = [
   {
@@ -227,7 +228,7 @@ export const Component = () => {
   const colors = getTextColor();
 
   return (
-    <main className={`relative w-full min-h-screen overflow-hidden transition-all duration-700 ease-in-out ${getBgGradient()}`} id="home">
+    <main className={`relative w-full h-[840px] overflow-hidden transition-all duration-700 ease-in-out ${getBgGradient()}`} id="home">
       {/* Menu Overlay */}
       <AnimatePresence>
         {isMenuOpen && (
@@ -264,10 +265,9 @@ export const Component = () => {
               {/* Menu Logo */}
               <div className="flex justify-center mb-2">
                 <img
-                  className="w-auto h-80 object-cover"
+                  className="w-auto h-56 object-cover"
                   alt="Logo"
-                  src="/wala--2--1.png"
-                />
+                  src="/wala--2--1.png"                />
               </div>
 
               <div className={`border border-t ${colors.menuBorder}`}></div>
@@ -299,7 +299,7 @@ export const Component = () => {
       <div className="container relative mx-auto px-5 py-6 h-full md:max-w-[1440px]">
         {/* Logo */}
         <div className="absolute size-[80px] md:size-[94px] md:top-10  md:left-20 bg-white rounded-full">
-          <img className=" size-[70px] md:size-[86px] mt-0 ml-1.5 object-cover" alt="Logo" src="/wala--2--1.png" />
+          <img className=" size-[70px] md:size-[86px] mt-0 ml-1.5 object-cover" alt="Logo" src={logo} />
         </div>
 
         {/* Cart Button */}
