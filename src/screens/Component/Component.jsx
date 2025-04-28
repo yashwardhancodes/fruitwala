@@ -228,7 +228,7 @@ export const Component = () => {
   const colors = getTextColor();
 
   return (
-    <main className={`relative w-full h-[840px] overflow-hidden transition-all duration-700 ease-in-out ${getBgGradient()}`} id="home">
+    <main className={`relative min-w-fit h-[840px] overflow-hidden transition-all duration-700 ease-in-out ${getBgGradient()}`} id="home">
       {/* Menu Overlay */}
       <AnimatePresence>
         {isMenuOpen && (

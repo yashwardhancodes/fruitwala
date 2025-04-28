@@ -35,12 +35,12 @@ function Footer() {
 
         <div className="flex items-center justify-center gap-3">
           <img src={Mob} alt="Phone Icon" className="w-6 h-6" />
-          <p className='text-[#FFF4B8] text-[16px] font-normal'>9889890989</p>
+          <p className='text-[#FFF4B8] text-[16px] font-normal'>7385111273</p>
         </div>
 
         <div className="flex items-center justify-center gap-3">
           <img src={Email} alt="Email Icon" className="w-5 h-5" />
-          <p className='text-[16px] text-[#FFF4B8] font-normal'>freshfruitwala@gmail.com</p>
+          <p className='text-[16px] text-[#FFF4B8] font-normal'>sganeshgupta.24@gmail.com</p>
         </div>
 
         <Link to="/privacy-policy">
